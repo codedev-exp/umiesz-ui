@@ -5,6 +5,9 @@ import { connect } from 'react-redux';
 import Header from './components/Header';
 import Home from './components/Home';
 
+import { Button } from 'reactstrap';
+
+
 const mapStateToProps = state => ({
   appName: state.appName
 });
@@ -18,6 +21,7 @@ class App extends Component {
       <div className="App">
         <Header appName="Header" />
         {this.props.appName}
+        <Button color="danger">Danger!</Button>
         <Home />
       </div>
     );
