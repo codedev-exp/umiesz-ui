@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import { promiseMiddleware } from './middleware';
-//import './index.scss';
+import './index.scss';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const defaultState = { appName: 'Cos', articles: null};
+const defaultState = { appName: 'Coss', articles: null};
+
 const reducer = function(state = defaultState, action) {
     switch (action.type) {
         case 'HOME_PAGE_LOADED':
@@ -16,8 +17,6 @@ const reducer = function(state = defaultState, action) {
     }
     return state;
 };
-
-
 
 const store = createStore(reducer, applyMiddleware(promiseMiddleware));
 

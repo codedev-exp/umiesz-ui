@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import './App.scss';
 import { connect } from 'react-redux';
 
-import Header from './components/Header';
-import Home from './components/Home';
+import Header from './header';
+import Home from './components/home';
+import Register from './register';
+import Login from './login';
 
-import { Button } from 'reactstrap';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 
+import './App.scss';
 
 const mapStateToProps = state => ({
   appName: state.appName
@@ -18,12 +23,15 @@ class App extends Component {
     
     //const onClick = () => store.dispatch({ type: 'TOGGLE' });
     return (
-      <div className="App">
-        <Header appName="Header" />
-        {this.props.appName}
-        <Button color="danger">Danger!</Button>
-        <Home />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
+        </div>
+      </Router>
+
     );
   }
 }

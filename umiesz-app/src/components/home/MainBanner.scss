@@ -1,0 +1,27 @@
+.main-banner {
+   // background-image: url('../../img/illustration.png');
+   min-height: 550px;
+   width:100%;
+   background-size: cover;
+
+   .PromoText {
+       margin-top: 80px;
+
+       Button {
+        background-color:#9ace16;
+        border-radius: 15px;
+        border-color: #9ace16;
+        color: #fff;
+        font-size: 14px;
+        padding: 8px 35px;
+        text-shadow: 1px 1px rgba(80, 81, 79, 0.4);
+        letter-spacing: 1.5px;
+
+        &:hover {
+            background: #fff;
+            color: #9ace16;
+            text-shadow: 0px 0px rgba(91, 160, 23, 0.753);
+        }
+       }
+   }
+}

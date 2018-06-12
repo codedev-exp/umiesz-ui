@@ -1,0 +1,45 @@
+.ml-auto {
+    li:not(:nth-last-child(-n+2)) > a,{
+        color: #000;
+        border-radius: 15px;
+        padding: 5px 20px;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    li {
+        &:last-child{
+            margin-left: 10px;
+            padding: 0!important;
+            background-color: transparent!important;
+
+            &:hover {
+                background: transparent!important;
+            }
+        }
+        &:nth-child(6) { 
+            margin-left: 20px;
+        }
+    }
+
+
+
+}
+
+.primaryButton {
+    background-color:#9ace16!important;
+    border-radius: 15px;
+    border-color: #9ace16!important;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 35px;
+    text-shadow: 1px 1px rgba(80, 81, 79, 0.4);
+
+    &:hover {
+        background: #fff!important;
+        color: #9ace16!important;
+        text-shadow: 0px 0px rgba(91, 160, 23, 0.753);
+    }
+}

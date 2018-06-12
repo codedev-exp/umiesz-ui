@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ArticleList from '../ArticleList';
+import ArticleList from '../../ArticleList';
 
 const mapStateToProps = state => ({
     articles: state.articles
@@ -14,14 +14,5 @@ const MainView = props => {
         </div>
     );
 }
-// class MainView extends React.Component {
-//     render(){
-//         return(
-//             <div>
-
-//             </div>
-//         );
-//     }
-// }
 
 export default connect(mapStateToProps, () => ({}))(MainView);
