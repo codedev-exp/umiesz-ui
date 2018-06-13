@@ -17,12 +17,12 @@ class Header extends React.Component {
             <div className="ContainerHeader">
                 <Container fluid={false}>
                     <Row>
-                    <Col md="3">
-                        <img src={mainLogo} alt="logo" />
-                    </Col>
-                    <Col md="9">
-                        <MainMenu />
-                    </Col>
+                        <Col md="3">
+                            <img src={mainLogo} alt="logo" />
+                        </Col>
+                        <Col md="9">
+                            <MainMenu />
+                        </Col>
                     </Row>
                 </Container>
             </div>
